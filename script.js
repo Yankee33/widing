@@ -23,6 +23,7 @@ const pad = n => String(n).padStart(2, '0');
 const target = new Date(CONFIG.date);
 const names = `${CONFIG.groom} & ${CONFIG.bride}`;
 $$('[data-names]').forEach(el => el.textContent = names);
+$$('[data-names-caps]').forEach(el => el.textContent = names);
 $('[data-month]').textContent = MONTHS[target.getMonth()];
 $('[data-day]').textContent = target.getDate();
 $('[data-year]').textContent = target.getFullYear();
